@@ -71,3 +71,32 @@ input{
 a{
     color: red;
 }
+@media (max-width: 768px) {
+    .main-class{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .Calculator{
+        width: 60%;
+        height: 100%;
+        
+    }
+    .buttons{
+        width: 60%;
+        height: 100%;
+        gap: 5px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .ar{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        
+    }
+    h1{
+        font-size: 0.70rem;
+    }
+}
