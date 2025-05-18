@@ -34,6 +34,12 @@
           <button class="btn first and-ex" id="equals">=</button>
         </div>
       </div>
+      <div>
+        <h1>
+          This is a clone for educational purposes only. Created by
+          <a href="https://github.com/arbaj-saifi">Arbaj Khan</a>
+        </h1>
+      </div>
     </div>
     <script>
       const display = document.getElementById("display");
@@ -53,6 +59,20 @@
           }
         });
       });
+      display.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          try {
+            display.value = eval(display.value);
+          } catch (error) {
+            display.value = "Error";
+          }
+        }
+      });
+      if (e.key === "Enter") {
+        e.preventDefault();
+        newTask();
+      }
     </script>
   </body>
 </html>
